@@ -1,0 +1,8 @@
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.1
+firecrawl-py==1.6.0
+google-api-python-client==2.131.0
+google-auth==2.29.0
+google-auth-httplib2==0.2.0
+python-dotenv==1.0.1
