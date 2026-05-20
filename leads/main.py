@@ -83,10 +83,10 @@ def run() -> int:
     logger.info("      → phone number found for %d/%d leads", traced, len(final_leads))
 
     # ── Deliver ──────────────────────────────────────────────────────────────
-    from leads.delivery.google_sheets import append_leads
+    from leads.delivery.console import deliver_leads
 
-    logger.info("Delivering %d leads to Google Sheets...", len(final_leads))
-    append_leads(final_leads)
+    logger.info("Delivering %d leads...", len(final_leads))
+    csv_path = deliver_leads(final_leads)
 
     logger.info("=" * 60)
     logger.info("DONE. %d leads delivered. Your team can start dialing.", len(final_leads))
