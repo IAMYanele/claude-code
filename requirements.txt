@@ -1,1 +1,4 @@
-firecrawl-py
+requests
+beautifulsoup4
+lxml
+duckduckgo-search
